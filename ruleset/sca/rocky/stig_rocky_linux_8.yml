@@ -1,5 +1,5 @@
 # Security Configuration Assessment
-# CIS Checks for Rocky Linux 8
+# STIG Checks for Rocky Linux 8
 # Copyright (C) 2015, Wazuh Inc.
 #
 # This program is free software; you can redistribute it
@@ -8,7 +8,7 @@
 # Foundation
 #
 # Based on:
-# Defense Information Systems Agency Security Technical Implementation Guide Rocky Linux 8 Benchmark v1.0.0 - 03-29-2022
+# Defense Information Systems Agency Security Technical Implementation Guide Rocky Linux 8 Benchmark Version 1, Release 14 - 04-22-2024
 
 policy:
   id: "stig_rocky_linux_8"
