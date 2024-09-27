@@ -46,7 +46,7 @@ checks:
     remediation: 'Edit or create a file in the /etc/modprobe.d/ directory ending in .conf with a line that reads install cramfs /bin/false and a line the reads blacklist cramfs. Example: # printf "install cramfs /bin/false blacklist cramfs " >> /etc/modprobe.d/cramfs.conf Run the following command to unload the cramfs module: # modprobe -r cramfs.'
     compliance:
       - stid_id: ["RHEL-08-040025"]
-      - stig_category: ["3"]
+      - stig_severity: ["3"]
       - cis: ["1.1.1.1"]
       - cis_csc_v8: ["4.8"]
       - cis_csc_v7: ["9.2"]
@@ -74,7 +74,7 @@ checks:
       - "https://www.freedesktop.org/software/systemd/man/systemd-fstab-generator.html"
     compliance:
       - stid_id: ["RHEL-08-010543"]
-      - stig_category: ["3"]
+      - stig_severity: ["3"]
       - cis: ["1.1.2.1"]
       - cis_csc_v8: ["4.8"]
       - cis_csc_v7: ["9.2"]
@@ -97,7 +97,7 @@ checks:
     remediation: "Edit the /etc/fstab file and add nodev to the fourth field (mounting options) for the /tmp partition. Example: <device> /tmp <fstype> defaults,rw,nosuid,nodev,noexec,relatime 0 0 Run the following command to remount /tmp with the configured options: # mount -o remount /tmp."
     compliance:
       - stid_id: ["RHEL-08-040123"]
-      - stig_category: ["2"]
+      - stig_severity: ["2"]
       - cis: ["1.1.2.2"]
       - cis_csc_v8: ["4.8"]
       - cis_csc_v7: ["9.2"]
@@ -119,7 +119,7 @@ checks:
     remediation: "Edit the /etc/fstab file and add noexec to the fourth field (mounting options) for the /tmp partition. Example: <device> /tmp <fstype> defaults,rw,nosuid,nodev,noexec,relatime 0 0 Run the following command to remount /tmp with the configured options: # mount -o remount /tmp."
     compliance:
       - stid_id: ["RHEL-08-040125"]
-      - stig_category: ["2"]
+      - stig_severity: ["2"]
       - cis: ["1.1.2.3"]
       - cis_csc_v8: ["3.3"]
       - cis_csc_v7: ["14.6"]
@@ -142,7 +142,7 @@ checks:
     remediation: "Edit the /etc/fstab file and add nosuid to the fourth field (mounting options) for the /tmp partition. Example: <device> /tmp <fstype> defaults,rw,nosuid,nodev,noexec,relatime 0 0 Run the following command to remount /tmp with the configured options: # mount -o remount /tmp."
     compliance:
       - stid_id: ["RHEL-08-040124"]
-      - stig_category: ["2"]
+      - stig_severity: ["2"]
       - cis: ["1.1.2.4"]
       - cis_csc_v8: ["3.3"]
       - cis_csc_v7: ["14.6"]
@@ -171,7 +171,7 @@ checks:
       - "http://tldp.org/HOWTO/LVM-HOWTO/"
     compliance:
       - stid_id: ["RHEL-08-010540"]
-      - stig_category: ["3"]
+      - stig_severity: ["3"]
       - cis: ["1.1.3.1"]
       - cis_csc_v8: ["3.3"]
       - cis_csc_v7: ["14.6"]
@@ -194,7 +194,7 @@ checks:
     remediation: "Edit the /etc/fstab file and add nodev to the fourth field (mounting options) for the /var partition. Example: <device> /var <fstype> defaults,rw,nosuid,nodev,noexec,relatime 0 0 Run the following command to remount /var with the configured options: # mount -o remount /var."
     compliance:
       - stid_id: ["RHEL-08-010540"]
-      - stig_category: ["3"]
+      - stig_severity: ["3"]
       - cis: ["1.1.3.2"]
       - cis_csc_v8: ["3.3"]
       - cis_csc_v7: ["14.6"]
@@ -223,7 +223,7 @@ checks:
       - "http://tldp.org/HOWTO/LVM-HOWTO/"
     compliance:
       - stid_id: ["RHEL-08-010544"]
-      - stig_category: ["2"]
+      - stig_severity: ["2"]
       - cis: ["1.1.4.1"]
       - cis_csc_v8: ["3.3"]
       - cis_csc_v7: ["14.6"]
@@ -246,7 +246,7 @@ checks:
     remediation: "Edit the /etc/fstab file and add noexec to the fourth field (mounting options) for the /var/tmp partition. Example: <device> /var/tmp <fstype> defaults,rw,nosuid,nodev,noexec,relatime 0 0 Run the following command to remount /var/tmp with the configured options: # mount -o remount /var/tmp."
     compliance:
       - stid_id: ["RHEL-08-040134"]
-      - stig_category: ["2"]
+      - stig_severity: ["2"]
       - cis: ["1.1.4.2"]
       - cis_csc_v8: ["3.3"]
       - cis_csc_v7: ["14.6"]
@@ -269,7 +269,7 @@ checks:
     remediation: "Edit the /etc/fstab file and add nosuid to the fourth field (mounting options) for the /var/tmp partition. Example: <device> /var/tmp <fstype> defaults,rw,nosuid,nodev,noexec,relatime 0 0 Run the following command to remount /var/tmp with the configured options: # mount -o remount /var/tmp."
     compliance:
       - stid_id: ["RHEL-08-040133"]
-      - stig_category: ["2"]
+      - stig_severity: ["2"]
       - cis: ["1.1.4.3"]
       - cis_csc_v8: ["3.3"]
       - cis_csc_v7: ["14.6"]
@@ -292,7 +292,7 @@ checks:
     remediation: "Edit the /etc/fstab file and add nodev to the fourth field (mounting options) for the /var/tmp partition. Example: <device> /var/tmp <fstype> defaults,rw,nosuid,nodev,noexec,relatime 0 0 Run the following command to remount /var/tmp with the configured options: # mount -o remount /var/tmp."
     compliance:
       - stid_id: ["RHEL-08-040132"]
-      - stig_category: ["2"]
+      - stig_severity: ["2"]
       - cis: ["1.1.4.4"]
       - cis_csc_v8: ["3.3"]
       - cis_csc_v7: ["14.6"]
@@ -321,7 +321,7 @@ checks:
       - "http://tldp.org/HOWTO/LVM-HOWTO/"
     compliance:
       - stid_id: ["RHEL-08-010541"]
-      - stig_category: ["3"]
+      - stig_severity: ["3"]
       - cis: ["1.1.5.1"]
       - cis_csc_v8: ["8.3"]
       - cis_csc_v7: ["6.4"]
@@ -340,7 +340,7 @@ checks:
     remediation: "Edit the /etc/fstab file and add nodev to the fourth field (mounting options) for the /var/log partition. Example: <device> /var/log <fstype> defaults,rw,nosuid,nodev,noexec,relatime 0 0 Run the following command to remount /var/log with the configured options: # mount -o remount /var/log."
     compliance:
       - stid_id: ["RHEL-08-040126"]
-      - stig_category: ["2"]
+      - stig_severity: ["2"]
       - cis: ["1.1.5.2"]
       - cis_csc_v8: ["3.3"]
       - cis_csc_v7: ["14.6"]
@@ -363,7 +363,7 @@ checks:
     remediation: "Edit the /etc/fstab file and add noexec to the fourth field (mounting options) for the /var/log partition. Example: <device> /var/log <fstype> defaults,rw,nosuid,nodev,noexec,relatime 0 0 Run the following command to remount /var/log with the configured options: # mount -o remount /var/log."
     compliance:
       - stid_id: ["RHEL-08-040128"]
-      - stig_category: ["2"]
+      - stig_severity: ["2"]
       - cis: ["1.1.5.3"]
       - cis_csc_v8: ["3.3"]
       - cis_csc_v7: ["14.6"]
@@ -386,7 +386,7 @@ checks:
     remediation: "Edit the /etc/fstab file and add nosuid to the fourth field (mounting options) for the /var/log partition. Example: <device> /var/log <fstype> defaults,rw,nosuid,nodev,noexec,relatime 0 0 Run the following command to remount /var/log with the configured options: # mount -o remount /var/log."
     compliance:
       - stid_id: ["RHEL-08-040127"]
-      - stig_category: ["2"]
+      - stig_severity: ["2"]
       - cis: ["1.1.5.4"]
       - cis_csc_v8: ["3.3"]
       - cis_csc_v7: ["14.6"]
@@ -415,7 +415,7 @@ checks:
       - "http://tldp.org/HOWTO/LVM-HOWTO/"
     compliance:
       - stid_id: ["RHEL-08-010542"]
-      - stig_category: ["3"]
+      - stig_severity: ["3"]
       - cis: ["1.1.6.1"]
       - cis_csc_v8: ["8.3"]
       - cis_csc_v7: ["6.4"]
@@ -434,7 +434,7 @@ checks:
     remediation: "Edit the /etc/fstab file and add noexec to the fourth field (mounting options) for the /var partition. Example: <device> /var/log/audit <fstype> defaults,rw,nosuid,nodev,noexec,relatime 0 0 Run the following command to remount /var/log/audit with the configured options: # mount -o remount /var/log/audit."
     compliance:
       - stid_id: ["RHEL-08-040131"]
-      - stig_category: ["2"]
+      - stig_severity: ["2"]
       - cis: ["1.1.6.2"]
       - cis_csc_v8: ["3.3"]
       - cis_csc_v7: ["14.6"]
@@ -457,7 +457,7 @@ checks:
     remediation: "Edit the /etc/fstab file and add nodev to the fourth field (mounting options) for the /var/log/audit partition. Example: <device> /var/log/audit <fstype> defaults,rw,nosuid,nodev,noexec,relatime 0 0 Run the following command to remount /var/log/audit with the configured options: # mount -o remount /var/log/audit."
     compliance:
       - stid_id: ["RHEL-08-040129"]
-      - stig_category: ["2"]
+      - stig_severity: ["2"]
       - cis: ["1.1.6.3"]
       - cis_csc_v8: ["3.3"]
       - cis_csc_v7: ["14.6"]
@@ -480,7 +480,7 @@ checks:
     remediation: "Edit the /etc/fstab file and add nosuid to the fourth field (mounting options) for the /var/log/audit partition. Example: <device> /var/log/audit <fstype> defaults,rw,nosuid,nodev,noexec,relatime 0 0 Run the following command to remount /var/log/audit with the configured options: # mount -o remount /var/log/audit."
     compliance:
       - stid_id: ["RHEL-08-040130"]
-      - stig_category: ["2"]
+      - stig_severity: ["2"]
       - cis: ["1.1.6.4"]
       - cis_csc_v8: ["3.3"]
       - cis_csc_v7: ["14.6"]
@@ -509,7 +509,7 @@ checks:
       - "http://tldp.org/HOWTO/LVM-HOWTO/"
     compliance:
       - stid_id: ["RHEL-08-010800"]
-      - stig_category: ["2"]
+      - stig_severity: ["2"]
       - cis: ["1.1.7.1"]
       - cis_csc_v8: ["3.3"]
       - cis_csc_v7: ["14.6"]
@@ -532,7 +532,7 @@ checks:
     remediation: "Edit the /etc/fstab file and add nodev to the fourth field (mounting options) for the /home partition. Example: <device> /home <fstype> defaults,rw,nosuid,nodev,noexec,relatime 0 0 Run the following command to remount /home with the configured options: # mount -o remount /home."
     compliance:
       - stid_id: ["RHEL-08-010570"]
-      - stig_category: ["2"]
+      - stig_severity: ["2"]
       - cis: ["1.1.7.2"]
       - cis_csc_v8: ["3.3"]
       - cis_csc_v7: ["14.6"]
@@ -555,7 +555,7 @@ checks:
     remediation: "Edit the /etc/fstab file and add nosuid to the fourth field (mounting options) for the /home partition. Example: <device> /home <fstype> defaults,rw,nosuid,nodev,noexec,relatime 0 0 Run the following command to remount /home with the configured options: # mount -o remount /home."
     compliance:
       - stid_id: ["RHEL-08-010570"]
-      - stig_category: ["2"]
+      - stig_severity: ["2"]
       - cis: ["1.1.7.3"]
       - cis_csc_v8: ["3.3"]
       - cis_csc_v7: ["14.6"]
@@ -581,7 +581,7 @@ checks:
     remediation: "Edit the /etc/fstab file and add nodev to the fourth field (mounting options) for the /dev/shm partition. See the fstab(5) manual page for more information. Run the following command to remount /dev/shm using the updated options from /etc/fstab: # mount -o remount /dev/shm."
     compliance:
       - stid_id: ["RHEL-08-040120"]
-      - stig_category: ["2"]
+      - stig_severity: ["2"]
       - cis: ["1.1.8.1"]
       - cis_csc_v8: ["3.3"]
       - cis_csc_v7: ["14.6"]
@@ -605,7 +605,7 @@ checks:
     remediation: "Edit the /etc/fstab file and add noexec to the fourth field (mounting options) for the /dev/shm partition. Example: <device> /dev/shm <fstype> defaults,rw,nosuid,nodev,noexec,relatime 0 0 Run the following command to remount /dev/shm with the configured options: # mount -o remount /dev/shm NOTE It is recommended to use tmpfs as the device/filesystem type as /dev/shm is used as shared memory space by applications."
     compliance:
       - stid_id: ["RHEL-08-040122"]
-      - stig_category: ["2"]
+      - stig_severity: ["2"]
       - cis: ["1.1.8.2"]
       - cis_csc_v8: ["3.3"]
       - cis_csc_v7: ["14.6"]
@@ -629,7 +629,7 @@ checks:
     remediation: "Edit the /etc/fstab file and add nosuid to the fourth field (mounting options) for the /dev/shm partition. See the fstab(5) manual page for more information. Run the following command to remount /dev/shm using the updated options from /etc/fstab: # mount -o remount /dev/shm."
     compliance:
       - stid_id: ["RHEL-08-040121"]
-      - stig_category: ["2"]
+      - stig_severity: ["2"]
       - cis: ["1.1.8.3"]
       - cis_csc_v8: ["3.3"]
       - cis_csc_v7: ["14.6"]
@@ -654,7 +654,7 @@ checks:
     remediation: "If there are no other packages that depends on autofs, remove the package with: # dnf remove autofs Run the following command to disable autofs if it is required: # systemctl --now disable autofs."
     compliance:
       - stid_id: ["RHEL-08-040070"]
-      - stig_category: ["2"]
+      - stig_severity: ["2"]
       - cis: ["1.1.9"]
       - cis_csc_v8: ["10.3"]
       - cis_csc_v7: ["8.5"]
@@ -675,7 +675,7 @@ checks:
     remediation: "Edit or create a file in the /etc/modprobe.d/ directory ending in .conf Example: vim /etc/modprobe.d/usb_storage.conf and add the following line: install usb-storage /bin/true Run the following command to unload the usb-storage module: rmmod usb-storage."
     compliance:
       - stid_id: ["RHEL-08-040080"]
-      - stig_category: ["2"]
+      - stig_severity: ["2"]
       - cis: ["1.1.10"]
       - cis_csc_v8: ["10.3"]
       - cis_csc_v7: ["13.7"]
@@ -700,7 +700,7 @@ checks:
     remediation: "Edit /etc/dnf/dnf.conf and set gpgcheck=1 in the [main] section. Example: # sed -i 's/^gpgcheck\\s*=\\s*.*/gpgcheck=1/' /etc/dnf/dnf.conf Edit any failing files in /etc/yum.repos.d/* and set all instances starting with gpgcheck to 1. Example: # find /etc/yum.repos.d/ -name \"*.repo\" -exec echo \"Checking:\" {} \\; -exec sed -i 's/^gpgcheck\\s*=\\s*.*/gpgcheck=1/' {} \\;."
     compliance:
       - stid_id: ["RHEL-08-010019"]
-      - stig_category: ["2"]
+      - stig_severity: ["2"]
       - cis: ["1.2.2"]
       - cis_csc_v8: ["7.3"]
       - cis_csc_v7: ["3.4"]
@@ -727,7 +727,7 @@ checks:
       - "http://aide.sourceforge.net/stable/manual.html"
     compliance:
       - stid_id: ["RHEL-08-010359"]
-      - stig_category: ["2"]
+      - stig_severity: ["2"]
       - cis: ["1.3.1"]
       - cis_csc_v8: ["3.14"]
       - cis_csc_v7: ["14.9"]
@@ -753,7 +753,7 @@ checks:
       - "https://github.com/konstruktoid/hardening/blob/master/config/aidecheck.timer"
     compliance:
       - stid_id: ["RHEL-08-010360"]
-      - stig_category: ["2"]
+      - stig_severity: ["2"]
       - cis: ["1.3.2"]
       - cis_csc_v8: ["3.14"]
       - cis_csc_v7: ["14.9"]
@@ -783,7 +783,7 @@ checks:
     remediation: "The systemd drop-in files must be created if it is necessary to change the default settings: Create the file /etc/systemd/system/rescue.service.d/00-require-auth.conf which contains only the configuration to be overridden: [Service] ExecStart=-/usr/lib/systemd/systemd-sulogin-shell rescue."
     compliance:
       - stid_id: ["RHEL-08-010152"]
-      - stig_category: ["2"]
+      - stig_severity: ["2"]
       - cis: ["1.4.3"]
       - cis_csc_v8: ["5.2"]
       - cis_csc_v7: ["4.4"]
@@ -809,7 +809,7 @@ checks:
       - "https://www.freedesktop.org/software/systemd/man/coredump.conf.html"
     compliance:
       - stid_id: ["RHEL-08-010674"]
-      - stig_category: ["2"]
+      - stig_severity: ["2"]
       - cis: ["1.5"]
     condition: all
     rules:
@@ -825,7 +825,7 @@ checks:
       - "https://www.freedesktop.org/software/systemd/man/coredump.conf.html"
     compliance:
       - stid_id: ["RHEL-08-010675"]
-      - stig_category: ["2"]
+      - stig_severity: ["2"]
       - cis: ["1.5.2"]
       - nist_sp_800-53: ["CM-6b"]
     condition: all
@@ -869,7 +869,7 @@ checks:
     remediation: "Run the following command to remove all instances of selinux=0 and enforcing=0 from all CMDLINE_LINUX parameters: grubby --update-kernel ALL --remove-args 'selinux=0 enforcing=0'."
     compliance:
       - stid_id: ["RHEL-08-010170"]
-      - stig_category: ["2"]
+      - stig_severity: ["2"]
       - cis: ["1.6.1.2"]
       - cis_csc_v8: ["3.3"]
       - cis_csc_v7: ["14.6"]
@@ -893,7 +893,7 @@ checks:
     remediation: "Edit the /etc/selinux/config file to set the SELINUXTYPE parameter: SELINUXTYPE=targeted."
     compliance:
       - stid_id: ["RHEL-08-010675"]
-      - stig_category: ["2"]
+      - stig_severity: ["2"]
       - cis: ["1.6.1.3"]
       - cis_csc_v8: ["3.3"]
       - cis_csc_v7: ["14.6"]
@@ -919,7 +919,7 @@ checks:
       - "https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/selinux_users_and_administrators_guide/sect-security-enhanced_linux-introduction-selinux_modes"
     compliance:
       - stid_id: ["RHEL-08-010450"]
-      - stig_category: ["2"]
+      - stig_severity: ["2"]
       - cis: ["1.6.1.4"]
       - cis_csc_v8: ["3.3"]
       - cis_csc_v7: ["14.6"]
@@ -1175,7 +1175,7 @@ checks:
     remediation: "Edit or create the file /etc/dconf/profile/gdm and add the following: user-db:user system-db:gdm file-db:/usr/share/gdm/greeter-dconf-defaults Edit or create the file /etc/dconf/db/gdm.d/ and add the following: (This is typically /etc/dconf/db/gdm.d/00-login-screen) [org/gnome/login-screen] # Do not show the user list disable-user-list=true Run the following command to update the system databases: # dconf update."
     compliance:
       - stid_id: ["RHEL-08-020032"]
-      - stig_category: ["2"]
+      - stig_severity: ["2"]
       - cis: ["1.8.3"]
       - cis_csc_v8: ["4.1"]
       - cis_csc_v7: ["5.1"]
@@ -1219,7 +1219,7 @@ checks:
       - "https://access.redhat.com/articles/3642912#what-polices-are-provided-1"
     compliance:
       - stid_id: ["RHEL-08-010020"]
-      - stig_category: ["1"]
+      - stig_severity: ["1"]
       - cis: ["1.10"]
       - cis_csc_v8: ["3.10"]
       - cis_csc_v7: ["14.4"]
@@ -1247,7 +1247,7 @@ checks:
     remediation: "Run the following command to install chrony: # dnf install chrony."
     compliance:
       - stid_id: ["RHEL-08-010020"]
-      - stig_category: ["1"]
+      - stig_severity: ["1"]
       - cis: ["2.1.1"]
       - cis_csc_v8: ["8.4"]
       - cis_csc_v7: ["6.1"]
@@ -1294,7 +1294,7 @@ checks:
     remediation: "Run the following command to remove xinetd: # dnf remove xinetd."
     compliance:
       - stid_id: ["RHEL-08-040350"]
-      - stig_category: ["2"]
+      - stig_severity: ["2"]
       - cis: ["2.2.1"]
       - cis_csc_v8: ["4.8"]
       - cis_csc_v7: ["2.6", "9.2"]
@@ -1317,7 +1317,7 @@ checks:
     remediation: "Run the following command to remove the X Windows Server packages: # dnf remove xorg-x11-server-common."
     compliance:
       - stid_id: ["RHEL-08-040320"]
-      - stig_category: ["2"]
+      - stig_severity: ["2"]
       - cis: ["2.2.2"]
       - cis_csc_v8: ["4.8"]
       - cis_csc_v7: ["9.2"]
@@ -1339,7 +1339,7 @@ checks:
     remediation: "Run the following command to remove ftp: # dnf remove ftp."
     compliance:
       - stid_id: ["RHEL-08-040360"]
-      - stig_category: ["2"]
+      - stig_severity: ["2"]
       - cis: ["2.2.7"]
       - cis_csc_v8: ["4.8"]
       - cis_csc_v7: ["9.2"]
@@ -1361,7 +1361,7 @@ checks:
     remediation: "Run the following command to remove vsftpd: # dnf remove vsftpd."
     compliance:
       - stid_id: ["RHEL-08-040360"]
-      - stig_category: ["2"]
+      - stig_severity: ["2"]
       - cis: ["2.2.8"]
       - cis_csc_v8: ["4.8"]
       - cis_csc_v7: ["9.2"]
@@ -1383,7 +1383,7 @@ checks:
     remediation: "Run the following command to remove tftp-server: # dnf remove tftp-server."
     compliance:
       - stid_id: ["RHEL-08-040360"]
-      - stig_category: ["2"]
+      - stig_severity: ["2"]
       - cis: ["2.2.9"]
       - cis_csc_v8: ["4.8"]
       - cis_csc_v7: ["9.2"]
@@ -1405,7 +1405,7 @@ checks:
     remediation: "Run the following command to remove the telnet-server package: # dnf remove telnet-server."
     compliance:
       - stid_id: ["RHEL-08-040000"]
-      - stig_category: ["1"]
+      - stig_severity: ["1"]
       - cis: ["2.2.16"]
       - cis_csc_v8: ["4.8"]
       - cis_csc_v7: ["2.6", "9.2"]
@@ -1447,7 +1447,7 @@ checks:
     remediation: "Run the following command to remove the rsh package: # dnf remove rsh."
     compliance:
       - stid_id: ["RHEL-08-040010"]
-      - stig_category: ["1"]
+      - stig_severity: ["1"]
       - cis: ["2.3.2"]
       - cis_csc_v8: ["4.8"]
       - cis_csc_v7: ["2.6"]
@@ -1477,7 +1477,7 @@ checks:
     remediation: 'Edit or create a file in the /etc/modprobe.d/ directory ending in .conf Example: printf " install sctp /bin/true " >> /etc/modprobe.d/sctp.conf.'
     compliance:
       - stid_id: ["RHEL-08-040023"]
-      - stig_category: ["3"]
+      - stig_severity: ["3"]
       - cis: ["3.1.2"]
       - cis_csc_v8: ["4.8"]
       - cis_csc_v7: ["9.2"]
@@ -1524,7 +1524,7 @@ checks:
     remediation: "Run the following command to install FirewallD and iptables: # dnf install firewalld iptables."
     compliance:
       - stid_id: ["RHEL-08-040100"]
-      - stig_category: ["2"]
+      - stig_severity: ["2"]
       - cis: ["3.4.1.1"]
       - cis_csc_v8: ["4.4"]
       - cis_csc_v7: ["9.4"]
@@ -1547,7 +1547,7 @@ checks:
     remediation: "Run the following command to unmask firewalld # systemctl unmask firewalld Run the following command to enable and start firewalld # systemctl --now enable firewalld."
     compliance:
       - stid_id: ["RHEL-08-040101"]
-      - stig_category: ["2"]
+      - stig_severity: ["2"]
       - cis: ["3.4.1.4"]
       - cis_csc_v8: ["4.4"]
       - cis_csc_v7: ["9.4"]
@@ -1881,7 +1881,7 @@ checks:
     remediation: "Run the following command to enable auditd: # systemctl --now enable auditd."
     compliance:
       - stid_id: ["RHEL-08-030181"]
-      - stig_category: ["2"]
+      - stig_severity: ["2"]
       - cis: ["4.1.1.2"]
       - cis_csc_v8: ["8.2"]
       - cis_csc_v7: ["6.2", "6.3"]
@@ -1983,7 +1983,7 @@ checks:
     remediation: "Set the following parameters in /etc/audit/auditd.conf: space_left_action = email action_mail_acct = root Set admin_space_left_action to either halt or single in /etc/audit/auditd.conf. Example: admin_space_left_action = halt."
     compliance:
       - stig_id: ["RHEL-08-030040", "RHEL-08-030060"]
-      - stig_category: ["2"]
+      - stig_severity: ["2"]
       - cis: ["4.1.2.3"]
       - cis_csc_v8: ["8.2", "8.3"]
       - cmmc_v2.0: ["AU.L2-3.3.1"]
@@ -3117,7 +3117,7 @@ checks:
     remediation: "Edit the file /etc/security/pwquality.conf and add or modify the following line for password length to conform to site policy minlen = 14 Edit the file /etc/security/pwquality.conf and add or modify the following line for password complexity to conform to site policy minclass = 4 OR dcredit = -1 ucredit = -1 ocredit = -1 lcredit = -1 Run the following script to update the system-auth and password-auth files #!/usr/bin/env bash for fn in system-auth password-auth; do file=\"/etc/authselect/$(head -1 /etc/authselect/authselect.conf | grep 'custom/')/$fn\" if ! grep -Pq -- '^\\h*password\\h+requisite\\h+pam_pwquality.so(\\h+[^#\\n\\r]+)?\\h+.*enforce_for_r oot\\b.*$' \"$file\"; then sed -ri 's/^\\s*(password\\s+requisite\\s+pam_pwquality.so\\s+)(.*)$/\\1\\2 enforce_for_root/' \"$file\" fi if grep -Pq -- '^\\h*password\\h+requisite\\h+pam_pwquality.so(\\h+[^#\\n\\r]+)?\\h+retry=([4- 9]|[1-9][0-9]+)\\b.*$' \"$file\"; then sed -ri '/pwquality/s/retry=\\S+/retry=3/' \"$file\" elif ! grep -Pq -- '^\\h*password\\h+requisite\\h+pam_pwquality.so(\\h+[^#\\n\\r]+)?\\h+retry=\\d+\\b.*$' \"$file\"; then sed -ri 's/^\\s*(password\\s+requisite\\s+pam_pwquality.so\\s+)(.*)$/\\1\\2 retry=3/' \"$file\" fi done authselect apply-changes."
     compliance:
       - stid_id: ["RHEL-08-020100", "RHEL-08-020230", "RHEL-08-020110", "RHEL-08-020120", "RHEL-08-020130", "RHEL-08-020140", "RHEL-08-020150", "RHEL-08-020160", "RHEL-08-020170", "RHEL-08-020280", "RHEL-08-020300", "RHEL-08-020104"]
-      - stig_category: ["2"]
+      - stig_severity: ["2"]
     condition: all
     rules:
       - "f:/etc/pam.d/password-auth -> r:pam_pwquality.so && r:try_first_pass && r:retry="
@@ -3141,7 +3141,7 @@ checks:
     remediation: "Set password lockouts and unlock times to conform to site policy. deny should be not greater than 5 and unlock_time should be 0 (never), or 900 seconds or greater. Depending on the version you are running, follow one of the two methods bellow. Versions 8.2 and later: Edit /etc/security/faillock.conf and update or add the following lines: deny = 5 unlock_time = 900 Versions 8.0 and 8.1: Run the following script to update the system-auth and password-auth files. This script will update/add the deny=5 and unlock_time=900 options. This script should be modified as needed to follow local site policy. #!/usr/bin/env bash for fn in system-auth password-auth; do file=\"/etc/authselect/$(head -1 /etc/authselect/authselect.conf | grep 'custom/')/$fn\" if grep -Pq -- '^\\h*auth\\h+required\\h+pam_faillock\\.so(\\h+[^#\\n\\r]+)?\\h+deny=(0|[6-9]|[1- 9][0-9]+)\\b.*$' \"$file\"; then sed -ri '/pam_faillock.so/s/deny=\\S+/deny=5/g' \"$file\" elif ! grep -Pq -- '^\\h*auth\\h+required\\h+pam_faillock\\.so(\\h+[^#\\n\\r]+)?\\h+deny=\\d*\\b.*$' \"$file\"; then sed -r 's/^\\s*(auth\\s+required\\s+pam_faillock\\.so\\s+)([^{}#\\n\\r]+)?\\s*(\\{.*\\})?(.*)$ /\\1\\2\\3 deny=5 \\4/' $file fi if grep -P -- '^\\h*(auth\\h+required\\h+pam_faillock\\.so\\h+)([^#\\n\\r]+)?\\h+unlock_time=([1- 9]|[1-9][0-9]|[1-8][0-9][0-9])\\b.*$' \"$file\"; then sed -ri '/pam_faillock.so/s/unlock_time=\\S+/unlock_time=900/g' \"$file\" elif ! grep -Pq -- '^\\h*auth\\h+required\\h+pam_faillock\\.so(\\h+[^#\\n\\r]+)?\\h+unlock_time=\\d*\\b.*$ ' \"$file\"; then sed -ri 's/^\\s*(auth\\s+required\\s+pam_faillock\\.so\\s+)([^{}#\\n\\r]+)?\\s*(\\{.*\\})?(.*)$ /\\1\\2\\3 unlock_time=900 \\4/' \"$file\" fi done authselect apply-changes."
     compliance:
       - stid_id: ["RHEL-08-020010"]
-      - stig_category: ["2"]
+      - stig_severity: ["2"]
       - cis: ["5.5.2"]
       - cis_csc_v8: ["6.2"]
       - cis_csc_v7: ["16.7"]
@@ -3165,7 +3165,7 @@ checks:
     remediation: "Set remembered password history to conform to site policy. Run the following script to add or modify the pam_pwhistory.so and pam_unix.so lines to include the remember option: #!/usr/bin/env bash { file=\"/etc/authselect/$(head -1 /etc/authselect/authselect.conf | grep 'custom/')/system-auth\" if ! grep -Pq -- '^\\h*password\\h+(requisite|required|sufficient)\\h+pam_pwhistory\\.so\\h+([^#\\n\\ r]+\\h+)?remember=([5-9]|[1-9][0-9]+)\\b.*$' \"$file\"; then if grep -Pq -- '^\\h*password\\h+(requisite|required|sufficient)\\h+pam_pwhistory\\.so\\h+([^#\\n\\ r]+\\h+)?remember=\\d+\\b.*$' \"$file\"; then sed -ri 's/^\\s*(password\\s+(requisite|required|sufficient)\\s+pam_pwhistory\\.so\\s+([^# \\n\\r]+\\s+)?)(remember=\\S+\\s*)(\\s+.*)?$/\\1 remember=5 \\5/' $file elif grep -Pq -- '^\\h*password\\h+(requisite|required|sufficient)\\h+pam_pwhistory\\.so\\h+([^#\\n\\ r]+\\h+)?.*$' \"$file\"; then sed -ri '/^\\s*password\\s+(requisite|required|sufficient)\\s+pam_pwhistory\\.so/ s/$/ remember=5/' $file else sed -ri '/^\\s*password\\s+(requisite|required|sufficient)\\s+pam_unix\\.so/i password required pam_pwhistory.so remember=5 use_authtok' $file fi fi if ! grep -Pq -- '^\\h*password\\h+(requisite|required|sufficient)\\h+pam_unix\\.so\\h+([^#\\n\\r]+\\h +)?remember=([5-9]|[1-9][0-9]+)\\b.*$' \"$file\"; then if grep -Pq -- '^\\h*password\\h+(requisite|required|sufficient)\\h+pam_unix\\.so\\h+([^#\\n\\r]+\\h +)?remember=\\d+\\b.*$' \"$file\"; then sed -ri 's/^\\s*(password\\s+(requisite|required|sufficient)\\s+pam_unix\\.so\\s+([^#\\n\\r] +\\s+)?)(remember=\\S+\\s*)(\\s+.*)?$/\\1 remember=5 \\5/' $file else sed -ri '/^\\s*password\\s+(requisite|required|sufficient)\\s+pam_unix\\.so/ s/$/ remember=5/' $file fi fi authselect apply-changes }."
     compliance:
       - stid_id: ["RHEL-08-020221"]
-      - stig_category: ["2"]
+      - stig_severity: ["2"]
       - cis: ["5.5.3"]
       - cis_csc_v8: ["5.2"]
       - cis_csc_v7: ["4.4"]
@@ -3187,7 +3187,7 @@ checks:
     remediation: "Set password hashing algorithm to sha512. Edit /etc/libuser.conf and edit of add the following line: crypt_style = sha512 Edit /etc/login.defs and edit or add the following line: ENCRYPT_METHOD SHA512 Run the following script to configure pam_unix.so to use the sha512 hashing algorithm: #!/usr/bin/env bash for fn in system-auth password-auth; do file=\"/etc/authselect/$(head -1 /etc/authselect/authselect.conf | grep 'custom/')/$fn\" if ! grep -Pq -- '^\\h*password\\h+(requisite|required|sufficient)\\h+pam_unix\\.so(\\h+[^#\\n\\r]+)? \\h+sha512\\b.*$' \"$file\"; then if grep -Pq -- '^\\h*password\\h+(requisite|required|sufficient)\\h+pam_unix\\.so(\\h+[^#\\n\\r]+)? \\h+(md5|blowfish|bigcrypt|sha256)\\b.*$' \"$file\"; then sed -ri 's/(md5|blowfish|bigcrypt|sha256)/sha512/' \"$file\" else sed -ri 's/(^\\s*password\\s+(requisite|required|sufficient)\\s+pam_unix.so\\s+)(.*)$/\\1s ha512 \\3/' $file fi fi done authselect apply-changes Note: This only effects local users and passwords created after updating the files to use sha512. If it is determined that the password algorithm being used is not SHA-512, once it is changed, it is recommended that all user ID's be immediately expired and forced to change their passwords on next login."
     compliance:
       - stid_id: ["RHEL-08-010159"]
-      - stig_category: ["2"]
+      - stig_severity: ["2"]
       - cis: ["5.5.4"]
       - cis_csc_v8: ["3.11"]
       - cis_csc_v7: ["16.4"]
@@ -3219,7 +3219,7 @@ checks:
     remediation: "Set the PASS_MAX_DAYS parameter to conform to site policy in /etc/login.defs : PASS_MAX_DAYS 60 Modify user parameters for all users with a password set to match: # chage --maxdays 365 <user>."
     compliance:
       - stid_id: ["RHEL-08-020200"]
-      - stig_category: ["2"]
+      - stig_severity: ["2"]
       - cis: ["5.6.1.1"]
       - cis_csc_v8: ["4.1"]
       - cis_csc_v7: ["4.4"]
@@ -3286,7 +3286,7 @@ checks:
     remediation: "Run the following command to set the default password inactivity period to 35 days: # useradd -D -f 35 Modify user parameters for all users with a password set to match: # chage --inactive 30 <user>."
     compliance:
       - stid_id: ["RHEL-08-020260"]
-      - stig_category: ["2"]
+      - stig_severity: ["2"]
       - cis: ["5.6.1.4"]
       - cis_csc_v8: ["5.2"]
       - cis_csc_v7: ["4.4"]
@@ -3487,7 +3487,7 @@ checks:
     remediation: "Run the following commands to set owner, group, and permissions on /etc/gshadow- : # chown root:root /etc/gshadow- # chmod 0000 /etc/gshadow-."
     compliance:
       - stid_id: ["RHEL-08-030370"]
-      - stig_category: ["2"]
+      - stig_severity: ["2"]
       - cis: ["6.1.10"]
       - cis_csc_v8: ["3.3"]
       - cis_csc_v7: ["16.4"]
@@ -3518,7 +3518,7 @@ checks:
     remediation: "If any accounts in the /etc/shadow file do not have a password, run the following command to lock the account until it can be determined why it does not have a password: # passwd -l <username> Also, check to see if the account is logged in and investigate what it is being used for to determine if it needs to be forced off."
     compliance:
       - stid_id: ["RHEL-08-010121"]
-      - stig_category: ["1"]
+      - stig_severity: ["1"]
       - cis: ["6.2.1"]
       - cis_csc_v8: ["5.2"]
       - cis_csc_v7: ["4.4"]
@@ -3545,7 +3545,7 @@ checks:
     remediation: "Remove any users other than root with UID 0 or assign them a new UID if appropriate."
     compliance:
       - stid_id: ["RHEL-08-040200"]
-      - stig_category: ["1"]
+      - stig_severity: ["1"]
       - cis: ["6.2.8"]
       - cis_csc_v8: ["4.1"]
       - cis_csc_v7: ["5.1"]
